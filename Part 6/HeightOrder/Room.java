@@ -34,12 +34,10 @@ public class Room {
             return null;
         }
         
-        int shortest = this.people.get(0).getHeight();
         Person shortestPerson = this.people.get(0);
         
         for (Person person : people){
-            if (person.getHeight() < shortest){
-                shortest = person.getHeight();
+            if (person.getHeight() < shortestPerson.getHeight()){
                 shortestPerson = person;
             }
         }
