@@ -23,12 +23,11 @@ public class SimpleCollection {
         if (this.elements.size() == 0){
             return null;
         }
-        int longest = this.elements.get(0).length();
+        
         String longestString = this.elements.get(0);
         
         for (String element : elements){
-            if (element.length() > longest){
-                longest = element.length();
+            if (element.length() > longestString.length()){
                 longestString = element;
             }
         }
